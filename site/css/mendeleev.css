@@ -1,0 +1,133 @@
+.mendeleev {
+    display: flex;
+    width: 502px;
+    height: 283px;
+    border: #090101 solid 1px;
+    flex-wrap: wrap;
+}
+.bluediv {
+    width: 250px;
+    height: 140px;
+}
+.yelowdiv {
+    width: 250px;
+    height: 140px;
+}
+.flexcontainer {
+    width: 250px;
+    height: 140px;
+    border: #090101 solid 1px;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    display:flex;
+    background-color: #aabcfa;
+}
+.subcontainer1 {
+    width: 150px;
+    height: 88px;
+    margin: 1px auto;
+    background-color: #aabcfa;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display:flex;
+}
+.subcontainer2 {
+    width: 90px;
+    height: 80px;
+    background-color: #aabcfa;
+    flex-direction: column;
+    flex-wrap: wrap;
+    float: right;
+    display:flex;
+    text-align: right;
+    margin-right: 1px;
+    padding: 1px;
+}
+.flexcontainerGermanyGuly {
+    width: 250px;
+    height: 140px;
+    border: #090101 solid 1px;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    display:flex;
+    background-color: #f6de06;
+}
+.subcontainer1GermanyGuly {
+    width: 150px;
+    height: 88px;
+    margin: 1px auto;
+    background-color: #f6de06;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display:flex;
+}
+.subcontainer2GermanyGuly {
+    width: 90px;
+    height: 80px;
+    background-color: #f6de06;
+    flex-direction: column;
+    flex-wrap: wrap;
+    float: right;
+    display:flex;
+    text-align: right;
+    margin-right: 1px;
+    padding: 1px;
+}
+.maincontainer {
+    width: 280px;
+    height: 80px;
+    margin: 1px auto;
+    flex-direction: row;
+    display:flex;
+}
+.number {
+    font-size: 38px;
+    font-weight: bold;
+}
+.numberGermany {
+    font-size: 38px;
+    font-weight: bold;
+    margin-left: 7rem;
+}
+.numberGaly {
+    font-size: 38px;
+    font-weight: bold;
+    margin-left: 7rem;
+}
+.ticker {
+   font-size: 80px;
+}
+.name {
+    font-size: 50px;
+    margin-left: 4rem;
+}
+.nameTitan {
+    font-size: 50px;
+    margin-left: 7.5rem;
+}
+.nameGermany {
+    font-size: 50px;
+    margin-left: 0.2rem;
+}
+.nameGuly {
+    font-size: 50px;
+    margin-left: 0.2rem;
+}
+.atomicNumber {
+    font-weight: lighter;
+    font-size: 38px;
+}
+.atomicNumberGermany {
+    font-weight: lighter;
+    font-size: 38px;
+    margin-left: 4rem;
+}
+.atomicNumberGuly {
+    font-weight: lighter;
+    font-size: 38px;
+    margin-left: 4rem;
+}
+.mendeleev2 {
+    margin-left: auto;
+    margin-right: auto;
+}
