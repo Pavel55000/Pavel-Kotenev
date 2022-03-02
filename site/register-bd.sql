@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Мар 02 2022 г., 13:50
+-- Время создания: Мар 02 2022 г., 14:23
 -- Версия сервера: 5.7.33-log
 -- Версия PHP: 7.1.33
 
@@ -29,10 +29,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `users` (
   `id` int(11) UNSIGNED NOT NULL,
-  `login` varchar(50) NOT NULL,
-  `pass` varchar(32) NOT NULL,
-  `name` varchar(50) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `login` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `pass` varchar(50) CHARACTER SET utf8 NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Индексы сохранённых таблиц
