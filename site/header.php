@@ -80,22 +80,29 @@ function getwords($result){
             <div class="popup_content">
                 <a href="##" class="popup_close">X</a>
                 <div class="popup_title">SIGN IN</div>
-                <form method="post">
-                    <input type="text" name="login">
-                    <input type="password" name="password">
-                    <input type="submit"></button>
-                </form>
-<?php
-//-------------------------------------авторизация------------------------------------------------------------------------------
-$secret=password_hash($_POST['password'], PASSWORD_DEFAULT);
-$name=$_POST['login'];
-if ($secret='$2y$10$D7KT0UabzHKeeid/oG5jyentfGl.jJNHOywf4ZV2nuLC5zu5egjnW' && $name = "Regina")     //pass: lecturer
- {
-    echo "LOGIN SUCCESSFUL";
-} else {
-    echo "INCORRECT USERNAME OR PASSWORD";
-}
-?>
+                <div class="container mt-4">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Registration</h3>
+                            <form action="check.php" method="post">
+                                <input type="text" name="login" class="form-control" id="login" placeholder="Логин"><br>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Имя"><br>
+                                <input type="password" name="pass" class="form-control" id="pass" placeholder="Пароль"><br>
+                                <button class="btn btn-success">Register</button><br>
+                            </form>
+                        </div>
+
+                        <div class="col">
+                            <h3>Authorization</h3>
+                            <form action="auth.php" method="post">
+                                <input type="text" name="login" class="form-control" id="login" placeholder="Логин"><br>
+                                <input type="password" name="pass" class="form-control" id="pass" placeholder="Пароль"><br>
+                                <button class="btn btn-success">Go</button><br>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>

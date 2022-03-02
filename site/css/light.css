@@ -176,7 +176,7 @@
     background-color: black;
     color: white;
     width: 400px;
-    height: 300px;
+    height: 330px;
     padding: 30px;
     position: relative;
     transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
