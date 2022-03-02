@@ -86,7 +86,6 @@ function getwords($result){
                             <h3>Registration</h3>
                             <form action="check.php" method="post">
                                 <input type="text" name="login" class="form-control" id="login" placeholder="Логин"><br>
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Имя"><br>
                                 <input type="password" name="pass" class="form-control" id="pass" placeholder="Пароль"><br>
                                 <button class="btn btn-success">Register</button><br>
                             </form>
