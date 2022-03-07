@@ -1,30 +1,7 @@
-<?php
-$me = 'I am 24 years old, born and raised in Orenburg, graduated from school, went to study and work in St. Petersburg.
-                            After the academy, in connection with the changed labor market, there was a practical interest in programming.
-                            On the recommendations of my friends who went through school, I decided to study.';
-$firsphrase = mb_substr($me, 0, 17);
-$col=['#3394be','#763380', '#b5da12', '#06ab88', '#3a312b', '#4e4e54', '#80635a', '#412a83'];
-$thiscolor=array_rand($col);
-$firsphraseA = "<span style=\"color:$col[$thiscolor]\">$firsphrase</span>";
-$feedback = 'I like the school. At first, I did not always keep up with what was happening in the lesson,
-                            because Im not used to working with consoles and interfaces of development programs.
-Homework allows you to fully understand what Regina is talking about.';
-$feedarr = explode(' ', $feedback); //разбираем
-$elsethiscolor = array_rand($col);
-foreach ($feedarr as $key => &$element)
-{
-    if (($key + 1) % 2 == 0)
-    {
-        $element = "<span style=\"color:$col[$thiscolor]\">$element</span>";
-    }
-    else $element = "<span style=\"color:$col[$elsethiscolor]\">$element</span>";
-}
-$feedback = implode(' ', $feedarr); //собираем
-?>
-
+<?
+include 'header.php'; ?>
 <body class="body">
 <wrapper class="wrapper">
-    <? include 'header.php'; ?>
     <div>
         <div class="row inner-content">
             <div></div>
@@ -42,7 +19,7 @@ $feedback = implode(' ', $feedarr); //собираем
                 <card class="card-website columns">
                     <card class="card card-website">
                         <section CLASS="card-section">ABOUT ME</section>
-                        <div class="imgcard2_ about"><?=$firsphraseA?>, born and raised in Orenburg, graduated from school, went to study and work in St. Petersburg.
+                        <div class="imgcard2_ about"><?=me()?>, born and raised in Orenburg, graduated from school, went to study and work in St. Petersburg.
                             After the academy, in connection with the changed labor market, there was a practical interest in programming.
                             On the recommendations of my friends who went through school, I decided to study.</div>
 
@@ -51,7 +28,7 @@ $feedback = implode(' ', $feedarr); //собираем
                 <card class="card-website columns">
                     <card class="card card-website">
                         <section CLASS="card-section">ABOUT SCOOL</section>
-                        <div class="imgcard2_ about"><?=$feedback?></div>
+                        <div class="imgcard2_ about"><?=feedback()?></div>
 
                     </card>
                 </card>

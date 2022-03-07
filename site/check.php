@@ -12,19 +12,22 @@ else if(mb_strlen($pass) < 5 || mb_strlen($pass) > 50){
 	exit();
 }
 
-$pass = md5($pass."thisisforhabr");
 
-$mysql = new mysqli('localhost', 'root', '', 'register-bd');
 
-$result1 = $mysql->query("SELECT * FROM `users` WHERE `login` = '$login'");
+$mysql = new mysqli('localhost', 'root', '', 'register_bd_new');
+
+$result1 = $mysql->query("SELECT * FROM `users` WHERE `LOGIN` = '$login'");
 $user1 = $result1->fetch_assoc();
+
 if(!empty($user1)){
 	echo "Данный логин уже используется!";
 	exit();
 }
+$pass = md5($pass."ftyreyrwisrte");
 
+$res = $mysql->query("INSERT users(PASS, LOGIN) 
+VALUES ('" . $pass . "', '" . $login . "')");
 
 header('Location: index.php');
 exit();
- ?>
-?>
+

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Мар 02 2022 г., 14:23
+-- Время создания: Мар 07 2022 г., 08:56
 -- Версия сервера: 5.7.33-log
 -- Версия PHP: 7.1.33
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `register-bd`
+-- База данных: `register_bd_new`
 --
 
 -- --------------------------------------------------------
@@ -28,10 +28,17 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `users` (
-  `id` int(11) UNSIGNED NOT NULL,
-  `login` varchar(50) CHARACTER SET utf8 NOT NULL,
-  `pass` varchar(50) CHARACTER SET utf8 NOT NULL
+  `ID` int(11) NOT NULL,
+  `LOGIN` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
+  `PASS` varchar(50) CHARACTER SET utf8mb4 NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Дамп данных таблицы `users`
+--
+
+INSERT INTO `users` (`ID`, `LOGIN`, `PASS`) VALUES
+(17, 'regina', '615da1949c667e801d33cb78384b8b1c');  //1234567
 
 --
 -- Индексы сохранённых таблиц
@@ -41,7 +48,17 @@ CREATE TABLE `users` (
 -- Индексы таблицы `users`
 --
 ALTER TABLE `users`
-  ADD UNIQUE KEY `id` (`id`);
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT для сохранённых таблиц
+--
+
+--
+-- AUTO_INCREMENT для таблицы `users`
+--
+ALTER TABLE `users`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
